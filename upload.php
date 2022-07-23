@@ -67,7 +67,7 @@ curl_setopt_array($curl, array(
     'document' => new CURLFILE('converted-file.docx')
   ),
   CURLOPT_HTTPHEADER => array(
-    'Authorization: Bearer pdf_live_1G2tbj6ytg0e27AnLpm6wBEEcGkBkLFE6gdOpJwQtev'
+    'Authorization: Bearer pdf_live_NeX6siStISfx6jxfX52gq6CCyYYcaTIovWUnsa9sA85'
   ),
   CURLOPT_FILE => $FileHandle,
 ));
@@ -101,7 +101,7 @@ else if ($fileExtension == 'doc'){
         'document' => new CURLFILE('converted-file.docx')
       ),
       CURLOPT_HTTPHEADER => array(
-        'Authorization: Bearer pdf_live_1G2tbj6ytg0e27AnLpm6wBEEcGkBkLFE6gdOpJwQtev'
+        'Authorization: Bearer pdf_live_NeX6siStISfx6jxfX52gq6CCyYYcaTIovWUnsa9sA85'
       ),
       CURLOPT_FILE => $FileHandle,
     ));
@@ -134,7 +134,7 @@ curl_setopt_array($curl, array(
     'document' => new CURLFILE('converted-file.xls')
   ),
   CURLOPT_HTTPHEADER => array(
-    'Authorization: Bearer pdf_live_1G2tbj6ytg0e27AnLpm6wBEEcGkBkLFE6gdOpJwQtev'
+    'Authorization: Bearer pdf_live_NeX6siStISfx6jxfX52gq6CCyYYcaTIovWUnsa9sA85'
   ),
   CURLOPT_FILE => $FileHandle,
 ));
@@ -167,7 +167,7 @@ curl_setopt_array($curl, array(
     'document' => new CURLFILE('converted-file.xlsx')
   ),
   CURLOPT_HTTPHEADER => array(
-    'Authorization: Bearer pdf_live_1G2tbj6ytg0e27AnLpm6wBEEcGkBkLFE6gdOpJwQtev'
+    'Authorization: Bearer pdf_live_NeX6siStISfx6jxfX52gq6CCyYYcaTIovWUnsa9sA85'
   ),
   CURLOPT_FILE => $FileHandle,
 ));
@@ -200,7 +200,7 @@ curl_setopt_array($curl, array(
     'document' => new CURLFILE('converted-file.ppt')
   ),
   CURLOPT_HTTPHEADER => array(
-    'Authorization: Bearer pdf_live_1G2tbj6ytg0e27AnLpm6wBEEcGkBkLFE6gdOpJwQtev'
+    'Authorization: Bearer pdf_live_NeX6siStISfx6jxfX52gq6CCyYYcaTIovWUnsa9sA85'
   ),
   CURLOPT_FILE => $FileHandle,
 ));
@@ -233,7 +233,7 @@ curl_setopt_array($curl, array(
     'document' => new CURLFILE('converted-file.pptx')
   ),
   CURLOPT_HTTPHEADER => array(
-    'Authorization: Bearer pdf_live_1G2tbj6ytg0e27AnLpm6wBEEcGkBkLFE6gdOpJwQtev'
+    'Authorization: Bearer pdf_live_NeX6siStISfx6jxfX52gq6CCyYYcaTIovWUnsa9sA85'
   ),
   CURLOPT_FILE => $FileHandle,
 ));
@@ -266,7 +266,7 @@ curl_setopt_array($curl, array(
     'document' => new CURLFILE('converted-file.jpg')
   ),
   CURLOPT_HTTPHEADER => array(
-    'Authorization: Bearer pdf_live_1G2tbj6ytg0e27AnLpm6wBEEcGkBkLFE6gdOpJwQtev'
+    'Authorization: Bearer pdf_live_NeX6siStISfx6jxfX52gq6CCyYYcaTIovWUnsa9sA85'
   ),
   CURLOPT_FILE => $FileHandle,
 ));
@@ -299,7 +299,7 @@ curl_setopt_array($curl, array(
     'document' => new CURLFILE('converted-file.png')
   ),
   CURLOPT_HTTPHEADER => array(
-    'Authorization: Bearer pdf_live_1G2tbj6ytg0e27AnLpm6wBEEcGkBkLFE6gdOpJwQtev'
+    'Authorization: Bearer pdf_live_NeX6siStISfx6jxfX52gq6CCyYYcaTIovWUnsa9sA85'
   ),
   CURLOPT_FILE => $FileHandle,
 ));
@@ -332,7 +332,7 @@ curl_setopt_array($curl, array(
     'document' => new CURLFILE('converted-file.tiff')
   ),
   CURLOPT_HTTPHEADER => array(
-    'Authorization: Bearer pdf_live_1G2tbj6ytg0e27AnLpm6wBEEcGkBkLFE6gdOpJwQtev'
+    'Authorization: Bearer pdf_live_NeX6siStISfx6jxfX52gq6CCyYYcaTIovWUnsa9sA85'
   ),
   CURLOPT_FILE => $FileHandle,
 ));
@@ -365,7 +365,7 @@ curl_setopt_array($curl, array(
     'document' => new CURLFILE('converted-file.html')
   ),
   CURLOPT_HTTPHEADER => array(
-    'Authorization: Bearer pdf_live_1G2tbj6ytg0e27AnLpm6wBEEcGkBkLFE6gdOpJwQtev'
+    'Authorization: Bearer pdf_live_NeX6siStISfx6jxfX52gq6CCyYYcaTIovWUnsa9sA85'
   ),
   CURLOPT_FILE => $FileHandle,
 ));

@@ -30,7 +30,7 @@ session_start();
   <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
      <h1 class="title-font sm:text-4xl text-3xl mb-10 font-medium text-white">Convert Your Files in PDF within Seconds</h1>
      <!-- create a select menu -->
-     <select name="file_type" id="file_type" class="w-full md:w-auto px-3 py-3 mr-5 text-white bg-gray-900 rounded-lg">
+     <select name="file_type" id="file_type" class="w-full md:w-auto px-3 py-3 mr-5 text-white bg-gray-900 rounded-lg" required>
        <option value="">Select File Type</option>
        <option value="doc">DOCX</option>
        <option value="doc">DOC</option>
@@ -54,6 +54,7 @@ session_start();
         </div>
       </div>
       <button type="submit" onClick="process()" id="btn" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Processing Order"  name="uploadBtn" value="Upload" class="btn inline-flex mt-10 text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Upload</button>
+      <button type="button" id="download" class="btn inline-flex mt-10 text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Download</button>
       <?php
 if (isset($_SESSION['message']) && $_SESSION['message']) {
     echo '<button class="inline-flex mt-10 text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"><a href="result.pdf" download=result.pdf>' . $_SESSION['message'] . '</a></button>';
@@ -153,6 +154,11 @@ function process() {
     document.getElementById("btn").style.backgroundColor = "#ccc";
     document.getElementById("btn").style.color = "#000";
 
+}
+
+function show(){
+  const btn =   document.getElementById("download");
+  btn.style.display = "block";
 }
 
   </script>

@@ -29,9 +29,23 @@ session_start();
 <form class="grid place-items-center" method="POST" action="upload.php" enctype="multipart/form-data">
   <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
      <h1 class="title-font sm:text-4xl text-3xl mb-10 font-medium text-white">Convert Your Files in PDF within Seconds</h1>
+     <!-- create a select menu -->
+     <select name="file_type" id="file_type" class="w-full md:w-auto px-3 py-3 mr-5 text-white bg-gray-900 rounded-lg">
+       <option value="">Select File Type</option>
+       <option value="doc">DOCX</option>
+       <option value="doc">DOC</option>
+       <option value="xls">XLSX</option>
+       <option value="xls">XLS</option>
+       <option value="xls">PPT</option>
+       <option value="xls">PPTX</option>
+       <option value="docx">JPG</option>
+       <option value="xlsx">PNG</option>
+       <option value="pptx">TIFF</option>
+      </select>
       <div class="flex w-full justify-center items-end">
+          
       <div class="container" >
-            <input type="file" name="file" id="file">
+            <input type="file" accept=".doc, .docx, .ppt, .pptx, .xlsx, .xls, .png, .jpg, .tiff" name="file" id="file">
 
             <!-- Drag and Drop container-->
             <div class="upload-area"  id="uploadfile">
@@ -42,7 +56,7 @@ session_start();
       <button type="submit" onClick="process()" id="btn" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Processing Order"  name="uploadBtn" value="Upload" class="btn inline-flex mt-10 text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Upload</button>
       <?php
 if (isset($_SESSION['message']) && $_SESSION['message']) {
-    echo '<button class="inline-flex mt-10 text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"><a href="result.pdf">' . $_SESSION['message'] . '</a></button>';
+    echo '<button class="inline-flex mt-10 text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"><a href="result.pdf" download=result.pdf>' . $_SESSION['message'] . '</a></button>';
     unset($_SESSION['message']);
 }
 ?>

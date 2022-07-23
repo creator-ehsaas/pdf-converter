@@ -1,49 +1,3 @@
-<?php
-session_start();
-
-$message = ''; 
-
-$filename = $_FILES['file']['name'];
-$fileNameCmps = explode(".", $filename);
-$fileExtension = strtolower(end($fileNameCmps));
-$newFileName = 'converted-file.' . $fileExtension;
-/* Getting File size */
-$filesize = $_FILES['file']['size'];
-$_SESSION['message'] = $fileExtension;
-header("Location: index.php");
-/* Location */
-$location = __DIR__ . '/' . $newFileName;
-
-$return_arr = array();
-$allowedfileExtensions = array('jpg', 'tiff', 'png', 'xls', 'doc', 'docx', 'xlsx', 'ppt', 'pptx');
-
-
-// if (in_array($fileExtension, $allowedfileExtensions))
-// {
-/* Upload file */
-if (move_uploaded_file($_FILES['file']['tmp_name'], $location)) {
-$src = "default.png";
-
-// checking file is image or not
-$message = "Download";
-if (is_array(getimagesize($location))) {
-    $src = $location;
-}
-$return_arr = array("name" => $filename, "size" => $filesize, "src" => $src);
-}else{
-    $message = "Error";
-}
-// }
-// else
-// {
-//     $message = "Invalid file type". $fileExtension;
-// }
-echo json_encode($return_arr);
-
-
-$_SESSION['message'] = $message;
-header("Location: index.php");
-
 if ($fileExtension == 'docx'){
 $FileHandle = fopen('result.pdf', 'w+');
 
@@ -376,11 +330,3 @@ curl_close($curl);
 
 fclose($FileHandle);
 }
-
-
-
-
-
-
-
-?>
